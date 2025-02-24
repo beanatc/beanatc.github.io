@@ -5,6 +5,7 @@ function sendPlaneRequest() {
     let randomReqID = reqSuffix.concat("", chosenReq.toString());
     let reqFrom = "Plane".concat("-", planeNum.toString());
     const reqButton = document.getElementById(randomReqID).innerHTML=reqFrom;
+    alert("request entry")
 }
 
 function PlaneRequest(incomingReqID) {
@@ -17,7 +18,6 @@ function Game() {
     startButton.remove();
     while (true) {
         let howlong = Math.floor(Math.random() * 200001)
-        alert("gonna wait".concat(" ", howlong.toString()));
         setTimeout(howlong)
         sendPlaneRequest();
     }
