@@ -3,8 +3,14 @@ function sendPlaneRequest() {
     let chosenReq = Math.random() * 6
     let planeNum = Math.random() * 1001
     let randomReqID = reqSuffix.concat(" ", chosenReq.toString());
+    alert(randomReqID)
     let reqFrom = "Plane".concat(" ", planeNum.toString());
+    alert(reqFrom)
     const reqButton = document.getElementById(randomReqID).innerHTML=reqFrom;
+}
+
+function PlaneRequest() {
+    alert("request");
 }
 
 function Game() {
