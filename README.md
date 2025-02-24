@@ -1,2 +1,3 @@
-# beanatc.github.io
-Be an ATC!
+<center>
+  # Be an ATC!
+</center>
