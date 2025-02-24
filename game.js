@@ -1,3 +1,5 @@
+const planeTypes = [""]
+
 function sendPlaneRequest() {
     const reqSuffix = "req";
     let chosenReq = Math.floor(Math.random() * 6);
@@ -8,12 +10,18 @@ function sendPlaneRequest() {
 }
 
 function PlaneRequest(incomingReqID) {
-    alert("request");
+    const reqID = "req".concat("", incomingReqID.toString());
+    const reqButton = document.getElementById(reqID);
+    if (reqButton.innerHTML == "No request.") {
+        alert("There is no request here.");
+    } else {
+
+    };
 }
 
 function Game() {
     alert("Good luck!");
     const startButton = document.getElementById("startGame");
     startButton.remove();
-    setInterval(sendPlaneRequest, 30000);
+    setInterval(sendPlaneRequest, 10000);
 }
