@@ -12,6 +12,14 @@ h1 {
     text-shadow: 4px 4px #000000;
 }
 
+p {
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-shadow: 4px 4px #000000;
+}
+
 button {
     font-family: "Lexend", serif;
     font-optical-sizing: auto;
