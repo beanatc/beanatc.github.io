@@ -7,7 +7,7 @@ function sendPlaneRequest() {
     let randomReqID = reqSuffix.concat("", chosenReq.toString());
     let reqFrom = planeTypes[Math.floor(Math.random()*7)].concat("-", planeNum.toString());
     const reqButton = document.getElementById(randomReqID).innerHTML=reqFrom;
-    const reqButtonBG = document.getElementById(randomReqID).backgroundColor="yellow";
+    const reqButtonBG = document.getElementById(randomReqID).style.backgroundColor="yellow";
 }
 
 function PlaneRequest(incomingReqID) {
@@ -19,8 +19,8 @@ function PlaneRequest(incomingReqID) {
         alert("You already have this opened.");
     } else {
         const reqButton = document.getElementById(randomReqID).innerHTML="Opened.";
-        const reqButtonBG = document.getElementById(randomReqID).backgroundColor="black";
-        const reqButtonTC = document.getElementById(randomReqID).color="white";
+        const reqButtonBG = document.getElementById(randomReqID).style.backgroundColor="black";
+        const reqButtonTC = document.getElementById(randomReqID).style.color="white";
     };
 }
 
