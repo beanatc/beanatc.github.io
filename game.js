@@ -16,6 +16,6 @@ function Game() {
     const startButton = document.getElementById("startGame");
     startButton.remove();
     while (true) {
-        setTimeout(sendPlaneRequest, Math.floor(Math.random() * 200001))
+        setInterval(sendPlaneRequest, 30000);
     }
 }
