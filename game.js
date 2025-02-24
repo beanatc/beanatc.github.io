@@ -15,7 +15,5 @@ function Game() {
     alert("Good luck!");
     const startButton = document.getElementById("startGame");
     startButton.remove();
-    while (true) {
-        setInterval(sendPlaneRequest, 30000);
-    }
+    setInterval(sendPlaneRequest, 30000);
 }
