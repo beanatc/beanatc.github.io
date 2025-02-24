@@ -1,10 +1,10 @@
 function sendPlaneRequest() {
     const reqSuffix = "req";
-    let chosenReq = Math.random() * 6
-    let planeNum = Math.random() * 1001
-    let randomReqID = reqSuffix.concat(" ", chosenReq.toString());
+    let chosenReq = Math.floor(Math.random() * 6);
+    let planeNum = Math.floor(Math.random() * 1001);
+    let randomReqID = reqSuffix.concat("", chosenReq.toString());
     alert(randomReqID);
-    let reqFrom = "Plane".concat(" ", planeNum.toString());
+    let reqFrom = "Plane".concat("-", planeNum.toString());
     alert(reqFrom);
     const reqButton = document.getElementById(randomReqID).innerHTML=reqFrom;
 }
