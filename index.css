@@ -9,7 +9,7 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    text-shadow: 2px 2px #000000;
+    text-shadow: 4px 4px #000000;
 }
 
 button {
@@ -20,4 +20,14 @@ button {
     box-shadow: 5px 5px;
     background-color: white;
     border-radius: 25px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
 }

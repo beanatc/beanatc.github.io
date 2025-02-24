@@ -1,5 +1,5 @@
-const button = document.getElementById("startGame");
-
-button.addEventListener("click", function() {
-    alert("You clicked the button!"); 
-});
+function Game() {
+    alert("game");
+    const startButton = document.getElementById("startGame");
+    startButton.remove();
+}
