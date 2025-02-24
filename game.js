@@ -7,7 +7,7 @@ function sendPlaneRequest() {
     const reqButton = document.getElementById(randomReqID).innerHTML=reqFrom;
 }
 
-function PlaneRequest() {
+function PlaneRequest(incomingReqID) {
     alert("request");
 }
 
@@ -16,7 +16,9 @@ function Game() {
     const startButton = document.getElementById("startGame");
     startButton.remove();
     while (true) {
-        setTimeout(Math.floor(Math.random() * 200001))
+        let howlong = Math.floor(Math.random() * 200001)
+        alert("gonna wait".concat(" ", howlong.toString()));
+        setTimeout(howlong)
         sendPlaneRequest();
     }
 }
